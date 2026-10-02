@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9C</title>
+  </head>
+  <body>
+    <button class="js-heads-button" onclick="
+      printMove('heads');
+    ">heads</button>
+    
+    <button class="js-tails-button" onclick="
+      printMove('tails');
+    ">tails</button>
+    <p class="js-result">You chose: </p>
+    
+    <script>
+
+      
+
+      function printMove(result){
+        let paraElement = document.querySelector('.js-result');
+        paraElement.innerHTML = `You chose: ${result}`;
+      }
+    </script>
+  </body>
+</html>

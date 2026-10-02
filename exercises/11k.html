@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11K</title>
+  </head>
+  <body>
+
+    <script>
+      function countPositive(nums){
+        let count = 0;
+        
+        for(let i = 0; i<nums.length; i++){
+          if(nums[i] > 0){
+            count++;
+          }
+        }
+
+        return count;
+      }
+
+      const array = [-2, 3, -5, 7, 10];
+
+      console.log(countPositive(array));
+    </script>
+  </body>
+</html>

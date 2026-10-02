@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>6F-6J</title>
+  </head>
+  <body>
+    <p>
+      Wanna take a Guess ?
+    </p>
+    <button onclick="
+      guess = 'Heads';
+      if(guess == result){
+        console.log('You win');
+      } else {
+        console.log('You lose');
+      }">
+      Heads
+    </button>
+    <button onclick="
+      guess = 'Tails';
+      if(guess == result){
+        console.log('You win');
+      } else {
+        console.log('You lose');
+      }"
+      >Tails</button>
+    <script>
+      let randomNumber= Math.random();
+      let result='';
+      /*result= (randomNumber>=0 && randomNumber <0.5) ? 'Heads' : 'Tails';*/
+      if(randomNumber>=0 && randomNumber <0.5) {
+        result = 'Heads';
+      }else if (randomNumber>=0.5 && randomNumber<1) {
+        result='Tails';
+      }
+      console.log(result);
+      let guess = '';
+    </script>
+     
+  </body>
+</html>

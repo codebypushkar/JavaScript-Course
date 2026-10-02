@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>12P</title>
+  </head>
+  <body>
+     <button class="js-finish-button" 
+      onclick="finish()">
+      Start
+    </button>
+
+
+    <script>
+      // function finish() {
+        
+      //   setTimeout(() => {
+      //     const buttonElement = document.querySelector('.js-finish-button');
+      //     buttonElement.innerHTML = 'Finished!';
+      //     }, 1000);
+      // }
+      
+
+      function finish() {
+        const buttonElement = document.querySelector('.js-finish-button');
+        buttonElement.innerHTML = 'Loading....'
+        
+        setTimeout(() => (buttonElement.innerHTML = 'Finished!'), 1000);
+
+      }
+
+    </script>
+  </body>
+</html>

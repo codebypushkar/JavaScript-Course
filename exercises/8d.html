@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>8D</title>
+  </head>
+  <body>
+
+
+
+    <script>
+      const product1 = {
+        name: 'basketball',
+        price: 90
+      };
+      console.log(product1);
+      
+      const product2 = {
+        name: 'T-shirt',
+        price: 9
+      };
+      console.log(product2);
+      
+      
+      function comparePrice(product1, product2){
+        if(product1.price < product2.price){
+          return product1;
+        }else {
+          return product2;
+        }
+      }
+
+      console.log(comparePrice(product1,product2));
+
+      function isSameProduct(product1, product2){
+        if(JSON.stringify(product1) === JSON.stringify(product2)){
+          return true;
+        }else {
+          return false;
+        }
+      }
+      console.log(isSameProduct(product1,product2));
+    </script>
+  </body>
+</html>

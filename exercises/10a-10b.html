@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>10A-10C</title>
+
+    <style>
+      body {
+        font-family: Arial;
+      }
+      .add-button {
+        background-color: rgb(255, 216, 20);
+        padding: 10px 60px;
+        border: none;
+        font-size: 17px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-right: 16px;
+      }
+      .request-button {
+        background-color: black;
+        color: white;
+        padding: 10px 18px;
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-right: 16px;
+      }
+      .schedule-button {
+        background-color: rgb(230,230,230);
+        padding: 10px 18px;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        margin-right: 16px;
+        cursor: pointer;
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+    <button class="add-button">
+      Add to Cart
+    </button>
+
+    <button class="request-button">
+      Request now
+    </button>
+
+    <button class="schedule-button">
+      Schedule for later
+    </button>
+
+    <button class="js-button">
+      Test
+    </button>
+
+    <script>
+      console.log(document.querySelector('.js-button').classList.contains('js-button'));
+    </script>
+  </body>
+</html>

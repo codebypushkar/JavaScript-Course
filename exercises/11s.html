@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11R</title>
+  </head>
+
+  <body>
+
+    <script>
+      function removeEgg(foods){
+        let result = [];
+        let eggsremoved = 0;
+
+        for(let i = 0; i < foods.length; i++ ){
+          if(foods[i] === 'egg' && eggsremoved < 2){
+            eggsremoved++
+            continue;
+          }
+          result.push(foods[i]);
+          
+
+        }
+        return result;
+      }
+
+      const foods = ['salad', 'fish','egg','meat','egg','paneer', 'dal','egg','chawal','egg','roti'];
+      console.log(removeEgg(foods));
+
+    </script>
+  </body>
+</html>

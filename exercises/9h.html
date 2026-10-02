@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9H</title>
+  </head>
+  <body>
+    <input class="inputbar" placeholder="Type something" onkeyup="displayName()">
+    <p class="js-para"></p>
+    
+    <script>
+      
+      function displayName(){
+        const inputElement = 
+        document.querySelector('.inputbar');
+        const output = inputElement.value;
+
+        const paraElement = document.querySelector('.js-para');
+        paraElement.innerHTML = `${output}`;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>7A-7C</title>
+  </head>
+  <body>
+    <script>
+      function greet(name = 'there') {
+        console.log(`Hello ${name}!`);
+      }
+      greet('Pushkar');
+      greet('Jon');
+      greet('Sam');
+      greet();
+      greet();
+      function greetC(name) {
+        if(!name) {
+          console.log('Hello there!');
+        }else {
+          console.log(`Hello ${name}!`);
+        }
+      }
+      greetC();
+      greetC('Cercei')
+    </script>
+  </body>
+</html>

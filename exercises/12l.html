@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>12L</title>
+  </head>
+  <body>
+
+
+
+    <script>
+
+      function countPositive(nums) {
+        let positiveNumbers = 0;
+        let position = [];
+        nums.forEach(function(value,index){
+          if(value > 0){
+            positiveNumbers++;
+            position.push(index);
+          }
+        })
+        console.log(positiveNumbers);
+        console.log(position);
+      }
+      countPositive([2,-4,4,-45,2,24,56,653,-36,35,-53,24,245,-53]);
+
+
+    </script>
+  </body>
+</html>

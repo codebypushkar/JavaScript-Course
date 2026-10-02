@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11J</title>
+  </head>
+  <body>
+
+    <script>
+      function addArrays(array1, array2){
+        const result = [];
+
+        for(let i = 0; i < array1.length; i++){
+          let sum = array1[i] + array2[i];
+          result.push(sum);
+        }
+        return result;
+      }
+
+      const nums1 = [11, 22, 33, 44];
+      const nums2 = [10, 20, 30, 40];
+
+      console.log(addArrays(nums1, nums2));
+    </script>
+  </body>
+</html>

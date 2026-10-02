@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>10D</title>
+  </head>
+  <style>
+    .js-gaming {
+      background-color: black;
+      color: white;
+      padding: 10px 14px;
+      border: none;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .is-toggled {
+      background-color: rgb(230,230,230);
+      color: black;
+      padding: 10px 14px;
+      border: none;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <button class="js-gaming" onclick="switchOnoff()">
+      Gaming
+    </button>
+
+    <script>
+      function switchOnoff() {
+        const buttonElement = document.querySelector('.js-gaming')
+        if(buttonElement.classList.contains('is-toggled')){
+          buttonElement.classList.remove('is-toggled');
+        }else {
+          buttonElement.classList.add('is-toggled');
+        }
+      }
+    </script>
+  </body>
+</html>

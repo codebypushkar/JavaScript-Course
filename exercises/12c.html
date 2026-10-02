@@ -1,0 +1,31 @@
+<!DOCTYPE htmk>
+<html>
+  <head>
+    <title>12C</title>
+  </head>
+  <body>
+    <button class="js-finish-button">
+      Start
+    </button>
+
+    <script>
+      
+      const button = document.querySelector('.js-finish-button');
+      
+      button.addEventListener('click',() => {
+       setTimeout(() => {
+        button.innerHTML = 'Finished!';
+        }, 100);
+       });
+      
+      
+      // function finish() {
+        
+      //   setTimeout( function() {
+      //   //const buttonElement = document.querySelector('.js-finish-button');
+      //   buttonElement.innerHTML = 'Finished!';
+      //   }, 1000);
+      // }
+    </script>
+  </body>
+</html>

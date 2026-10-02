@@ -1,0 +1,34 @@
+<!DOCTYPE htmk>
+<html>
+  <head>
+    <title>12D</title>
+  </head>
+  <body>
+    <button class="js-finish-button">
+      Start
+    </button>
+
+    <script>
+
+      const button= document.querySelector('.js-finish-button');
+
+      button.addEventListener('click',() => {
+        button.innerHTML = 'Loading....';
+        
+        setTimeout(() => {
+        button.innerHTML = 'Finished!';
+        }, 1000)
+      })
+
+      // function finish() {
+      //   const buttonElement = document.querySelector('.js-finish-button');
+      //   buttonElement.innerHTML = 'Loading....'
+        
+      //   setTimeout( function() {
+      //   buttonElement.innerHTML = 'Finished!';
+      //   }, 1000);
+
+      // }
+    </script>
+  </body>
+</html>

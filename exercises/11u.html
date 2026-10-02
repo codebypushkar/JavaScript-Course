@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11U</title>
+  </head>
+
+  <body>
+
+    <script>
+      function removeEgg(foods){
+
+        const foodsCopy = foods.slice();
+        const reversedFoods = foodsCopy.reverse();
+
+        const result = [];
+        let eggsremoved = 0;
+
+        
+
+        for(let i = 0; i < reversedFoods.length; i++ ){
+          if(reversedFoods[i] === 'egg' && eggsremoved < 2){
+            eggsremoved++;
+            continue;
+          }
+          result.push(reversedFoods[i]);
+          
+
+        }
+        return result.reverse();
+      }
+
+      const foods = ['salad', 'fish','egg','meat','egg','paneer', 'dal','egg','chawal','egg','roti'];
+      console.log(removeEgg(foods));
+      console.log(foods);
+      
+
+    </script>
+  </body>
+</html>
